@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
 import pandas as pd 
-import plotly as px
+import plotly.express as px
 import cufflinks
 
 st.set_page_config(page_title='Dashboard', layout='wide')
