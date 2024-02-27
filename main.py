@@ -8,7 +8,7 @@ st.title(":rainbow[CRICKET ANALYSIS]")
 with st.sidebar:
     selected = option_menu(menu_title="Main Menu",options=["Data", "Visualization", "Bar Charts","Analysis"]
                        ,menu_icon="house",default_index=0)
-df=pd.read_csv('C:/Users/user/OneDrive/Desktop/new/data.csv')
+df=pd.read_csv('data.csv')
 
 if selected=="Data":
     df
