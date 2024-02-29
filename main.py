@@ -8,6 +8,7 @@ import cufflinks
 st.set_page_config(page_title='Dashboard', layout='wide')
 st.title(":blue[CRICKET ANALYSIS]")
 with st.sidebar:
+    st.subheader("This Data describes about the Cricket Analysis.")
     selected = option_menu(menu_title="Main Menu",options=["Data", "Visualization", "Bar Charts","Analysis"]
                        ,menu_icon="house",default_index=0)
 df=pd.read_csv('data.csv')
