@@ -27,6 +27,7 @@ if selected=="Visualization":
                width=350,labels=dict(x="Player", y="Runs"),color=df['Player'].head(10))
     st.plotly_chart(fig6, use_container_width=True)
 
+    st.subheader(':red[Number of Runs Contributed by each Team in the Season]')
     fig10 = px.bar(data_frame=df, x='Total runs', y='Team',
               color=df['Team'], width=350)
     st.plotly_chart(fig10, use_container_width=True)
